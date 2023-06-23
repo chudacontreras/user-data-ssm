@@ -20,10 +20,12 @@ sudo systemctl start amazon-ssm-agent
 
 > Note: Python 2 or Python 3 must be installed on your RHEL 8 or CentOS 8 instance for SSM Agent to work correctly. To verify that Python is installed, add the following command to the preceding command examples:
 
+
 ```bash
 sudo dnf install python3
-Amazon Linux, CentOS 6 (64 bit)
 ```
+
+## Amazon Linux, CentOS 6 (64 bit)
 ```bash
 #!/bin/bash
 cd /tmp
