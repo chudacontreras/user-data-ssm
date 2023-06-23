@@ -1,20 +1,22 @@
-Amazon Linux 2, RHEL 7, and CentOS 7 (64 bit)
+## Amazon Linux 2, RHEL 7, and CentOS 7 (64 bit)
 
+```bash
 #!/bin/bash
 cd /tmp
 sudo yum install -y https://s3.amazonaws.com/ec2-downloads-windows/SSMAgent/latest/linux_amd64/amazon-ssm-agent.rpm
 sudo systemctl enable amazon-ssm-agent
 sudo systemctl start amazon-ssm-agent
+```
 
+## RHEL 8 and CentOS 8
 
-RHEL 8 and CentOS 8
-
-#!/bin/bash
-cd /tmp
+```bash
+#!/bin/bash 
+cd /tmp 
 sudo dnf install -y https://s3.amazonaws.com/ec2-downloads-windows/SSMAgent/latest/linux_amd64/amazon-ssm-agent.rpm
-sudo systemctl enable amazon-ssm-agent
+sudo systemctl enable amazon-ssm-agent 
 sudo systemctl start amazon-ssm-agent
-
+```
 
 Note: Python 2 or Python 3 must be installed on your RHEL 8 or CentOS 8 instance for SSM Agent to work correctly. To verify that Python is installed, add the following command to the preceding command examples:
 
